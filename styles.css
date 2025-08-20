@@ -1,0 +1,18 @@
+:root { --text:#111; --muted:#555; --line:#e5e7eb; --max:1120px; }
+body { margin:0; font:16px/1.6 system-ui, sans-serif; color:var(--text); }
+.wrap { max-width:var(--max); margin:0 auto; padding:0 16px; }
+
+.site-header { border-bottom:1px solid var(--line); }
+.site-header .wrap { display:flex; align-items:center; justify-content:space-between; padding:14px 16px; }
+.site-title { font-weight:600; text-decoration:none; color:var(--text); }
+.site-nav a { margin-left:12px; text-decoration:none; color:var(--text); }
+.site-nav a:hover { border-bottom:2px solid var(--text); }
+
+.hero { padding:48px 16px; border-bottom:1px solid var(--line); }
+.hero h1 { margin:0 0 8px 0; font-size:clamp(24px, 4vw, 36px); }
+.lead { color:var(--muted); }
+
+.content { padding:24px 0; }
+.content h2 { margin-top:32px; }
+
+.site-footer { border-top:1px solid var(--line); padding:16px; color:var(--muted); text-align:center; }
