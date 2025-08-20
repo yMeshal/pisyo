@@ -3,36 +3,107 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Your Group Name</title>
+  <title>Grossmann-style Lab Template</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
+  <!-- Top strip with logo + university marks -->
+  <header class="site-top">
     <div class="wrap">
-      <a class="site-title" href="/">Your Group Name</a>
-      <nav class="site-nav">
-        <a href="/">Home</a>
-        <a href="people.html">People</a>
-        <a href="publications.html">Publications</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+      <a class="brand" href="#"><img src="assets/logo-placeholder.png" alt="Group Logo"></a>
+      <div class="univ">
+        <img src="assets/university-mark.png" alt="University Mark">
+      </div>
     </div>
   </header>
 
-  <main>
-    <section class="hero wrap">
-      <h1>Short tagline about your research</h1>
-      <p class="lead">Department of Chemical Engineering, Texas A&M University</p>
-    </section>
-    <section class="content wrap">
-      <h2>About</h2>
-      <p>Write a short paragraph about your group here.</p>
+  <!-- Banner image -->
+  <div class="hero">
+    <img src="assets/banner-1200x220.jpg" alt="">
+  </div>
+
+  <!-- Nav bar -->
+  <nav class="main-nav">
+    <div class="wrap">
+      <a class="home" href="index.html">Home</a>
+      <a href="research.html">Research Areas</a>
+      <a href="people.html">People</a>
+      <a href="papers.html">Papers</a>
+      <a href="software.html">Software</a>
+      <a href="glossary.html">Glossary</a>
+      <a href="links.html">Links</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Content layout: sidebar + main -->
+  <main class="wrap layout">
+    <aside class="sidebar">
+      <section class="pi-card">
+        <div class="pi-head">
+          <img class="pi-photo" src="assets/pi.jpg" alt="Prof. Name">
+          <h3>Prof. First Last</h3>
+          <p class="muted">Professor of Chemical Engineering</p>
+        </div>
+        <ul class="pi-links">
+          <li><a href="biosketch.html">Biosketch</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="https://scholar.google.com" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="presentations.html">Presentations</a></li>
+          <li><a href="books.html">Books</a></li>
+          <li><a href="podcast.html">Podcast</a></li>
+        </ul>
+      </section>
+
+      <section class="quick-tiles">
+        <a class="tile" href="research.html">
+          <img src="assets/icon-research.png" alt="">
+          <span>Research Areas</span>
+        </a>
+        <a class="tile" href="people.html">
+          <img src="assets/icon-people.png" alt="">
+          <span>Meet the People</span>
+        </a>
+        <a class="tile" href="papers.html">
+          <img src="assets/icon-papers.png" alt="">
+          <span>Read our Papers</span>
+        </a>
+        <a class="tile" href="links.html">
+          <img src="assets/icon-links.png" alt="">
+          <span>Useful Links</span>
+        </a>
+      </section>
+    </aside>
+
+    <section class="content">
+      <h1>Our research work</h1>
+      <p>
+        We develop discrete–continuous optimization models and methods for
+        problems in process systems engineering.
+      </p>
+      <p>
+        We address process synthesis, planning, and scheduling through novel
+        mathematical programming approaches with discrete and continuous
+        variables (MILP, MINLP, GDP), global optimization, and multi-period models,
+        including uncertainty.
+      </p>
+      <p>
+        Our work balances theory, computation, and real-world applications.
+      </p>
+
+      <h2>Highlights</h2>
+      <ul class="bullets">
+        <li>New paper on generalized disjunctive programming (2025).</li>
+        <li>Open-source MINLP solver add-on released.</li>
+        <li>Seminar at ABC Conference.</li>
+      </ul>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="wrap">
-      <p>College Station, TX · group@tamu.edu</p>
+      <p>Department of Chemical Engineering • Your University • City, State</p>
+      <p>group@university.edu</p>
     </div>
   </footer>
 </body>
